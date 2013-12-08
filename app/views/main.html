@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Progress Bars Demo</h1>
+
+  <div ng-cloak>
+	  <div class="progress" ng-repeat="bar in progressBars">
+	  	<span>{{bar.value}}%</span>
+			<div ng-class="{'overflow': bar.value > 100}" style="width: {{bar.value}}%"></div>
+		</div>
+	</div>
+
+	<div class="controls">
+		<select ng-model="selectedBar" ng-options="bar.id for bar in progressBars">
+		</select>
+		<button ng-click="updateProgress(selectedBar, -25)">-25</button>
+		<button ng-click="updateProgress(selectedBar, -10)">-10</button>
+		<button ng-click="updateProgress(selectedBar, 10)">+10</button>
+		<button ng-click="updateProgress(selectedBar, 25)">+25</button>
+	</div>
+
+</div>

@@ -1,0 +1,45 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.progress { 
+	height: 45px;
+	position: relative;
+	border: 1px solid #cbcbcb;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.progress > span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	line-height: 45px;
+	text-align: center;
+}
+
+.progress .overflow {
+	background: linear-gradient(to bottom, #e55 , #d33);
+}
+
+.progress > div {
+  transition: width 0.3s linear;
+	height: 100%;
+	background: linear-gradient(to bottom, #aed7e5 , #aaf);
+	overflow: hidden;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
